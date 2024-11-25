@@ -1,0 +1,399 @@
+<!DOCTYPE html><html lang="en"><head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="license" content="https://miyagawamizu.github.io/LICENSE">
+		<meta name="description" content="mizu.pages.dev | mizu.is-a.dev">
+		<meta name="theme-color" content="#ffceaa">
+		<meta property="og:site_name" content="@MiyagawaMizu">
+		<meta property="og:image" content="images/thumbnail_1.webp">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="keywords" content="miyagawamizu,mizu,mizumiyagawa,miyagawa,miyagawa mizu">
+		<meta name="author" content="MiyagawaMizu">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playpen+Sans&amp;family=Great+Vibes&amp;family=Passion+One&amp;family=Poetsen+One&amp;display=swap" as="style" onload="this.rel='stylesheet'">
+		<noscript>
+			<link
+				href="https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Great+Vibes&family=Passion+One&family=Poetsen+One&display=swap"
+				rel="stylesheet" />
+		</noscript>
+
+		<link rel="canonical" href="https://miyagawamizu.github.io/">
+		<link rel="icon" href="favicon.ico">
+
+		<!-- Chỉ tải CSS cần thiết cho phần trên cùng -->
+		<link rel="stylesheet" href="css/style.css">
+		<title>Portfolio của Lemonnn🍋</title>
+	</head>
+	<body oncontextmenu="return true;">
+		<button id="scroll-to-bento" onclick="scrollToBento()" alt="stolen from autumn">
+			<svg stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" fill="none" viewBox="0 0 512 512">
+				<path d="M112 184l144 144 144-144"></path>
+			</svg>
+		</button>
+		<div class="container">
+			<header id="profile">
+				<div class="about-me" id="about-me">
+					<div class="avatar-box bubble-trigger" onclick="toggleOpacity()">
+						<img class="avatar" src="images/IMG_3274.webp" alt="Avatar">
+
+						<img src="images/heart.webp" class="avatar-pendant" alt="Heart Pendant">
+
+						<div class="hairclip item mctooltip">
+							<div class="tooltip" style="display: none">
+								<span>Carved Pumpkin</span>
+								<br>
+								<span style="color: #ff6062; text-shadow: 0.11em 0.11em #002900">Curse of Binding</span>
+								<br>
+								<span style="color: #545454; text-shadow: 0.11em 0.11em #151515">minecraft:carved_pumpkin</span>
+							</div>
+						</div>
+
+						<div id="dot-box">
+							<div id="status">
+								<div class="empty"></div>
+								<p>Offline</p>
+							</div>
+							<span id="ping"></span>
+							<span id="dot"></span>
+						</div>
+						<div class="position">
+							<div class="bubble"></div>
+							<div class="status-bubble">
+								<span class="pin icon-1"></span>
+								<span class="status-content" alt="text-content"><img class="emoji" src="images/1214893524575846410.webp" loading="lazy">Helu</span>
+								<span class="pin icon-2"></span>
+							</div>
+						</div>
+					</div>
+					<div class="mememe">
+						<div class="username">
+							<h1 translate="no" class="name" alt="MiyagawaMizu miyagawa mizu">
+								Lemon
+							</h1>
+							<div class="poppy item mctooltip" style="
+									border-image: url(images/tooltip-border.png)
+										30% repeat;
+								">
+								<div class="tooltip" style="display: none">
+									<span style="color: #f3f05d; font-style: italic">my love for you &lt;3</span>
+									<br>
+									<span style="color: #a8a8a8; text-shadow: 0.11em 0.11em #292929">Mending</span>
+									<br>
+									<span style="color: #ff6062; text-shadow: 0.11em 0.11em #002900">Curse of Binding</span>
+									<br>
+									<span style="color: #a8a8a8; text-shadow: 0.11em 0.11em #002900">Protection X</span>
+									<br>
+									<span style="color: #a8a8a8; text-shadow: 0.11em 0.11em #002900">Unreaking X</span>
+									<br>
+									<span style="color: #545454; text-shadow: 0.11em 0.11em #151515">minecraft:red_flower</span>
+								</div>
+							</div>
+						</div>
+						<style>
+							h1, .line, #eat {
+								color: white !important;
+							}
+					
+							.line strong, .line span {
+								color: white !important;
+							}
+						</style>
+						<div class="line" id="l1">
+							I'm <strong title="Minh">Lemon🍋</strong>, a normal person
+							<strong></strong> who loves video games 🎮, manga 🍥
+							(i kept this a secret)
+						</div>
+						<div class="line" id="l2">
+							I live in Vietnam 🇻🇳 , i learned a bit of computer progamming (Python)
+							I can speak English very well, my main language is Vietnamese ☕.
+						</div>
+						<div class="line" id="l2">
+							Thank you for reading! Here is a cookie for you :3
+							<div class="cookie item mctooltip" id="eat">
+								<div class="tooltip" style="display: none">
+									<span>Tình yêu anh dành cho em :3</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="wrapper" id="wrapper">
+				<div class="bento" id="bento">
+					<a href="#wrapper" class="widget winget-clock">
+						<div class="vignette"></div>
+						<div class="clock-container">
+							<span id="time" class="time"></span>
+							<span id="day" class="day"></span>
+							<span id="date" class="date"></span>
+						</div>
+						<p>UTC+7</p>
+					</a>
+
+					<!-- Carousel Widget -->
+					<div class="carousel widget widget-display">
+						<div id="img1" class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="images/waguri_kaoruko5.webp" alt="Image 1">
+							</div>
+							<div class="carousel-item">
+								<img src="images/waguri_kaoruko2.webp" alt="Image 2">
+							</div>
+							<div class="carousel-item">
+								<img src="images/waguri_kaoruko3.webp" alt="Image 3">
+							</div>
+							<div class="carousel-item">
+								<img src="images/waguri_kaoruko4.webp" alt="Image 4">
+							</div>
+							<div class="carousel-item">
+								<img src="images/waguri_kaoruko11.webp" alt="Image 5">
+							</div>
+						</div>
+
+						<!-- Carousel Controls -->
+						<button class="carousel-control prev" onclick="prevSlide()">
+							<svg fill="#fff" height="40px" width="40px" viewBox="0 0 55.753 55.753">
+								<path d="M12.745,23.915c0.283-0.282,0.59-0.52,0.913-0.727L35.266,1.581c2.108-2.107,5.528-2.108,7.637,0.001
+                    c2.109,2.108,2.109,5.527,0,7.637L24.294,27.828l18.705,18.706c2.109,2.108,2.109,5.526,0,7.637
+                    c-1.055,1.056-2.438,1.582-3.818,1.582s-2.764-0.526-3.818-1.582L13.658,32.464c-0.323-0.207-0.632-0.445-0.913-0.727
+                    c-1.078-1.078-1.598-2.498-1.572-3.911C11.147,26.413,11.667,24.994,12.745,23.915z"></path>
+							</svg>
+						</button>
+						<button class="carousel-control next" onclick="nextSlide()">
+							<svg fill="#fff" height="40px" width="40px" viewBox="0 0 55.752 55.752">
+								<path d="M43.006,23.916c-0.28-0.282-0.59-0.52-0.912-0.727L20.485,1.581c-2.109-2.107-5.527-2.108-7.637,0.001
+                    c-2.109,2.108-2.109,5.527,0,7.637l18.611,18.609L12.754,46.535c-2.11,2.107-2.11,5.527,0,7.637c1.055,1.053,2.436,1.58,3.817,1.58
+                    s2.765-0.527,3.817-1.582l21.706-21.703c0.322-0.207,0.631-0.444,0.912-0.727c1.08-1.08,1.598-2.498,1.574-3.912
+                    C44.605,26.413,44.086,24.993,43.006,23.916z"></path>
+							</svg>
+						</button>
+
+						<!-- Carousel Indicators -->
+						<div class="carousel-indicators" id="carousel-indicators">
+							<span class="indicator active" onclick="currentSlide(1)"></span>
+							<span class="indicator" onclick="currentSlide(2)"></span>
+							<span class="indicator" onclick="currentSlide(3)"></span>
+							<span class="indicator" onclick="currentSlide(4)"></span>
+							<span class="indicator" onclick="currentSlide(5)"></span>
+						</div>
+						<p>Wakuri Kaoruko</p>
+					</div>
+
+					<!-- Social Widgets -->
+					<a class="widget widget-social" href="https://www.youtube.com/@Pot_YT" rel="noopener" target="_blank">
+						<div class="meta-container">
+							<div class="icon">
+								<img src="images/youtube.svg" alt="YouTube Icon">
+							</div>
+							<div class="meta">
+								<b>YouTube</b>
+								<p>Pot</p>
+							</div>
+							<div style="background-color: #eb0404; border-radius: 30px" class="follow">
+								Subscribe đi
+							</div>
+						</div>
+					</a>
+					<a class="widget widget-social" href="https://www.tiktok.com/@minhlehinyourheart" rel="noopener" target="_blank">
+						<div class="meta-container">
+							<div class="icon">
+								<img src="images/tiktok.svg">
+							</div>
+							<div class="meta">
+								<b>TikTok</b>
+								<p>@minhlehinyourheart</p>
+							</div>
+							<div style="background-color: #ea435a; border-radius: 5px" class="follow">
+								Follow đi
+							</div>
+						</div>
+					</a>
+					<a class="widget widget-social" href="https://www.twitch.tv/lemonthichanrau" rel="noopener" target="_blank">
+						<div class="meta-container">
+							<div class="icon">
+								<img src="images/twitch.svg">
+							</div>
+							<div class="meta">
+								<b>Twitch</b>
+								<p>lemonthichanrau</p>
+							</div>
+							<div style="background-color: #9147ff; border-radius: 5px" class="follow">
+								Follow nữa đi
+							</div>
+						</div>
+					</a>
+					<!-- <a
+						class="widget widget-social"
+						href="https://www.instagram.com/miyagawamizu/"
+						rel="noopener"
+						target="_blank">
+						<div class="meta-container">
+							<div class="icon">
+								<img src="./src/assets/images/social/instagram.svg" />
+							</div>
+							<div class="meta">
+								<b>Instagram</b>
+								<p>@miyagawamizu</p>
+							</div>
+							<div
+								style="background-color: #4093ef; border-radius: 5px"
+								class="follow">
+								Follow
+							</div>
+						</div>
+					</a> -->
+					<a class="widget widget-social" href="https://open.spotify.com/user/z8vtap612j1ajql4wsyhl074i" rel="noopener" target="_blank">
+						<div class="meta-container">
+							<div class="icon" style="background-color: white">
+								<img src="images/Spotify.svg">
+							</div>
+							<div class="meta">
+								<b>Spotify</b>
+								<p>Leh Minh</p>
+							</div>
+							<div style="
+									background-color: #f6f8fa;
+									border-radius: 30px;
+									color: #24292f;
+									outline: 1px solid #33333336;
+								" class="follow">
+								Chill cùng Lemon🍋
+							</div>
+						</div>
+					</a>
+					<div class="widget widget-display" id="img2">
+						<img class="img" src="images/mahiro.webp">
+						<p>My Wife</p>
+					</div>
+					<a class="widget widget-social" href="https://discord.gg/v9gFGBEf" rel="noopener" target="_blank">
+						<div class="meta-container">
+							<div class="icon">
+								<img src="images/discord.svg">
+							</div>
+							<div class="meta">
+								<b>Discord</b>
+								<p>Con trai nghịch dại sống không dai</p>
+							</div>
+							<div style="background-color: #5865f2; border-radius: 5px" class="follow">
+								Join Server
+							</div>
+						</div>
+					</a>
+					<a class="widget widget-social" href="https://t.me/lehminh" rel="noopener" target="_blank">
+						<div class="meta-container">
+							<div class="icon" style="background-color: white">
+								<img src="images/telegram.webp">
+							</div>
+							<div class="meta">
+								<b>Telegram</b>
+								<p>@Leh Minh</p>
+							</div>
+							<div style="background-color: #1c93e3; border-radius: 30px" class="follow">
+								Send Message
+							</div>
+						</div>
+					</a>
+					<a class="widget widget-social" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="noopener" target="_blank">
+						<div class="meta-container">
+							<div class="icon" style="background-color: white">
+								<img src="images/Steam.svg">
+							</div>
+							<div class="meta">
+								<b>Steam</b>
+								<p>Boo</p>
+							</div>
+							<div style="
+									background-color: #f6f8fa;
+									border-radius: 5px;
+									color: #24292f;
+									outline: 1px solid #33333336;
+								" class="follow">
+								Add Friend
+							</div>
+						</div>
+					</a>
+					<a class="widget widget-social" href="https://www.hoyolab.com/accountCenter/postList?id=87134665" rel="noopener" target="_blank">
+						<div class="meta-container">
+							<div class="icon" style="background-color: white">
+								<img src="images/HoYoLAB.svg">
+							</div>
+							<div class="meta">
+								<b>HoYoLAB</b>
+								<p>Leh Minh</p>
+							</div>
+							<div style="
+									background-color: #e5eaff;
+									border-radius: 30px;
+									color: #6680ff;
+									outline: 1px solid #33333336;
+								" class="follow">
+								Follow
+							</div>
+						</div>
+					</a>
+					<a class="widget widget-social" id="discord-rpc" title="Discord Rich Presence by AutumnVN https://chino.pages.dev/" rel="noopener">
+						<div id="discord">
+							<div class="content">
+								<div class="icon">
+									<img src="images/IMG_3272.webp" alt="avatar" draggable="false">
+								</div>
+								<div class="meta">
+									<b id="name">Lemon</b>
+									<div>
+										<span id="color-dot"></span>
+										<span id="status-rpc"></span>
+										<b id="activity"></b>
+									</div>
+								</div>
+							</div>
+							<div class="rpc">
+								<div>
+									<div id="large_image"></div>
+									<div id="small_image"></div>
+								</div>
+								<div class="meta">
+									<div id="details"></div>
+									<div id="state"></div>
+									<div id="timestamp"></div>
+								</div>
+							</div>
+						</div>
+						<div id="free">Ngủ ngon, ngon hơn nếu anh được ngủ với em</div>
+					</a>
+					<a class="widget widget-social" id="mail" href="mailto:minhleh74@gmail.com" rel="noopener" target="_blank">
+						<div class="meta-container">
+							<div class="icon" style="background-color: white">
+								<img src="images/gmail.svg">
+							</div>
+							<div class="meta">
+								<b>Email</b>
+								<p>minhleh74@gmail.com</p>
+							</div>
+							<img src="images/thumbnail.webp" id="img-ikaros" class="sticker">
+						</div>
+					</a>
+
+					<footer class="widget">
+						<div class="footer-box">
+							<div class="footer-tile">
+								<p>That's it buddy. Have a nide day!</p>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<button id="back-to-top" onclick="scrollToTop()">
+			<img src="images/doro.webp" alt="Back to Top">
+		</button>
+		<script async="" src="js/clock.js"></script>
+		<script async="" src="js/script.js"></script>
+		<script defer="" src="js/top.js"></script>
+		<script defer="" src="js/lanyard.js"></script>
+		<script defer="" src="js/slide.js"></script>
+		<div class="back-to-top"></div>
+	<!-- Cloudflare Pages Analytics --><script defer="" src="js/beacon.min.js" data-cf-beacon="{" token":="" "5c5a7f8570964855bc6193144426f3a3"}"=""></script><!-- Cloudflare Pages Analytics -->
+
+</body></html>
