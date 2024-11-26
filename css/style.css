@@ -69,6 +69,8 @@ header {
 .date,
 .day {
     min-width: max-content
+    bottom: -109px; font-size: 6em; font-style: italic;
+    font-family: "Minecraft Rus", cursive;
 }
 
 #status p,
