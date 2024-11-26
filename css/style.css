@@ -690,11 +690,10 @@ footer p {
 
 .clock-container,
 .date,
-.day {
-    bottom: -109px;
-    font-size: 6em;
-    font-style: italic;
-    font-family: "Minecraft Rus", cursive;
+. {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .clock-container {
@@ -716,10 +715,10 @@ footer p {
 }
 
 .day {
-    bottom: -156px;
-    font-size: 8em;
+    bottom: -109px; 
+    font-size: 6em;
     font-style: italic;
-    font-family: "Great Vibes", cursive
+    font-family: "Minecraft Rus", cursive;
 }
 
 .date {
