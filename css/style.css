@@ -691,9 +691,10 @@ footer p {
 .clock-container,
 .date,
 .day {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%)
+    bottom: -109px;
+    font-size: 6em;
+    font-style: italic;
+    font-family: "Minecraft Rus", cursive;
 }
 
 .clock-container {
