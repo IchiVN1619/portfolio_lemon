@@ -68,6 +68,7 @@ header {
 
 .date,
 .day {
+    min-width: max-content
 }
 
 #status p,
@@ -690,6 +691,9 @@ footer p {
 .clock-container,
 .date,
 .day {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .clock-container {
@@ -714,7 +718,7 @@ footer p {
     bottom: -156px;
     font-size: 8em;
     font-style: italic;
-    font-family: "Minecraft Rus", cursive
+    font-family: "Great Vibes", cursive
 }
 
 .date {
