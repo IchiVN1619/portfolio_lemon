@@ -124,7 +124,6 @@ img {
     src: url('../fonts/Minecraft.eot');
     src: local('Minecraft Rus Regular'), local('Minecraft'), url('../fonts/Minecraft.woff2') format('woff2'), url('../fonts/Minecraft.woff') format('woff'), url('../fonts/Minecraft.ttf') format('truetype');
     font-weight: 400;
-    font-size:80px;
     font-style: normal
 }
 
